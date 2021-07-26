@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       User data 
+     </title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>age</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div>
+                        <label>e mail </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>dob</label>
+                        <input type="string" name="dob" id="dob">
+                    </div>
+                    <div>
+                        <label>phone number</label>
+                        <input type="number" name="phonenumber" id="phonenumber">
+                    </div>
+                    <div>
+                        <label>password</label>
+                        <input type="string" name="password" id="password">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="peopleList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>age</th>
+                            <th>e mail</th>
+                            <th>dob</th>
+                            <th>phone number</th>
+                            <th>password</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="task.js"></script>
+</body>
+
+</html>
